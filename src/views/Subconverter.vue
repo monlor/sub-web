@@ -278,32 +278,32 @@ export default {
               {
                 label: "ACL4SSR",
                 value:
-                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR.ini"
+                  "https://ghproxy.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR.ini"
               },
               {
                 label: "ACL4SSR_Mini",
                 value:
-                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Mini.ini"
+                  "https://ghproxy.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Mini.ini"
               },
               {
                 label: "ACL4SSR_Online",
                 value:
-                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Online.ini"
+                  "https://ghproxy.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Online.ini"
               },
               {
                 label: "ACL4SSR_Online_Full",
                 value:
-                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Online_Full.ini"
+                  "https://ghproxy.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Online_Full.ini"
               },
               {
                 label: "ACL4SSR_Online_Mini",
                 value:
-                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Online_Mini.ini"
+                  "https://ghproxy.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Online_Mini.ini"
               },
               {
                 label: "ACL4SSR_WithChinaIp_WithGFW",
                 value:
-                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_WithChinaIp_WithGFW.ini"
+                  "https://ghproxy.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_WithChinaIp_WithGFW.ini"
               },
               {
                 label: "Maying",
