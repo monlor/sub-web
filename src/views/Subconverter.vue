@@ -255,7 +255,10 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND + "/sub?" }],
+        backendOptions: [
+          { value: process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND + "/sub?" },
+          { value: "https://subconv.monlor.com/sub?" }
+        ],
         remoteConfig: [
           {
             label: "universal",
