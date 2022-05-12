@@ -74,7 +74,7 @@ jobs:
         uses: monlor/bark-action@v3
         if: always()
         with:
-          host: https://rsshub.monlor.com
+          host: https://bark.monlor.com
           key: ${{ secrets.BARK_KEY }}   # Your secret key
           title: Github Actions
           body: '${{ env.NAME }} ran ${{ job.status }}！'
