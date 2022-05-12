@@ -276,6 +276,36 @@ export default {
             label: "customized",
             options: [
               {
+                label: "ACL4SSR",
+                value:
+                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR.ini"
+              },
+              {
+                label: "ACL4SSR_Mini",
+                value:
+                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Mini.ini"
+              },
+              {
+                label: "ACL4SSR_Online",
+                value:
+                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Online.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full",
+                value:
+                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Online_Full.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini",
+                value:
+                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_Online_Mini.ini"
+              },
+              {
+                label: "ACL4SSR_WithChinaIp_WithGFW",
+                value:
+                  "https://g.monlor.com/https://github.com/tindy2013/subconverter/raw/master/base/config/ACL4SSR_WithChinaIp_WithGFW.ini"
+              },
+              {
                 label: "Maying",
                 value:
                   "https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/customized/maying.ini"
