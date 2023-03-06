@@ -314,7 +314,7 @@ export default {
               {
                 label: "ACL4SSR_Online_Full(by monlor)",
                 value:
-                  "https://cdn.jsdelivr.net/gh/monlor/openclash-rules@master/ACL4SSR_Online_Full.ini"
+                  "https://raw.githubusercontent.com/monlor/openclash-rules/master/ACL4SSR_Online_Full.ini"
               }
             ]
           },
