@@ -296,7 +296,7 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [{ value: process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND + "/sub?" }],
         remoteConfig: [
           {
             label: "universal",
@@ -310,12 +310,47 @@ export default {
                 label: "Urltest",
                 value:
                   "https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/universal/urltest.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full(by monlor)",
+                value:
+                  "https://cdn.jsdelivr.net/gh/monlor/openclash-rules@master/ACL4SSR_Online_Full.ini"
               }
             ]
           },
           {
             label: "customized",
             options: [
+              {
+                label: "ACL4SSR",
+                value:
+                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR.ini"
+              },
+              {
+                label: "ACL4SSR_Mini",
+                value:
+                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_Mini.ini"
+              },
+              {
+                label: "ACL4SSR_Online",
+                value:
+                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_Online.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full",
+                value:
+                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_Online_Full.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini",
+                value:
+                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_Online_Mini.ini"
+              },
+              {
+                label: "ACL4SSR_WithChinaIp_WithGFW",
+                value:
+                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_WithChinaIp_WithGFW.ini"
+              },
               {
                 label: "Maying",
                 value:
