@@ -324,32 +324,47 @@ export default {
               {
                 label: "ACL4SSR",
                 value:
-                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR.ini"
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR.ini"
               },
               {
                 label: "ACL4SSR_Mini",
                 value:
-                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_Mini.ini"
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini.ini"
               },
               {
                 label: "ACL4SSR_Online",
                 value:
-                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_Online.ini"
-              },
-              {
-                label: "ACL4SSR_Online_Full",
-                value:
-                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_Online_Full.ini"
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
               },
               {
                 label: "ACL4SSR_Online_Mini",
                 value:
-                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_Online_Mini.ini"
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"
               },
               {
                 label: "ACL4SSR_WithChinaIp_WithGFW",
                 value:
-                  "https://cdn.jsdelivr.net/gh/tindy2013/subconverter@master/base/config/ACL4SSR_WithChinaIp_WithGFW.ini"
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_WithChinaIp_WithGFW.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full_Google",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Google.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full_MultiMode",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full_AdblockPlus",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini"
               },
               {
                 label: "Maying",
