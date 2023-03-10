@@ -296,7 +296,12 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND + "/sub?" }],
+        backendOptions: [
+          { value: "https://sub.monlor.com/sub?" },
+          { value: "https://sub.monlor.cn/sub?" },
+          { value: "https://sub.id9.cc/sub?" },
+          { value: "https://sub.xeton.dev/sub?" }
+        ],
         remoteConfig: [
           {
             label: "universal",
