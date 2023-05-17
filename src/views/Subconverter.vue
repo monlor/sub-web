@@ -231,7 +231,7 @@ export default {
               {
                 label: "全分组版（by monlor）",
                 value: "https://raw.githubusercontent.com/monlor/subconverter-rules/main/full.ini"
-              },
+              }
             ]
           },
           {
