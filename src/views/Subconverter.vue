@@ -197,10 +197,6 @@ export default {
             label: "推荐",
             options: [
               {
-                label: "默认（by monlor）",
-                value: "https://raw.githubusercontent.com/monlor/openclash-rules/master/ACL4SSR_Online_Full.ini"
-              },
-              {
                 label: "默认（无测速）",
                 value: "https://raw.githubusercontent.com/Meilieage/webcdn/main/rule/Area_Media_NoAuto.ini"
               },
@@ -229,9 +225,13 @@ export default {
                 value: "https://raw.githubusercontent.com/justdoiting/ClashRule/main/GeneralClashRule.ini"
               },
               {
-                 label: "流媒体通用分组",
+                 label: "流媒体专用",
                  value: "https://raw.githubusercontent.com/cutethotw/ClashRule/main/GeneralClashRule.ini"
-              }
+              },
+              {
+                label: "全分组版（by monlor）",
+                value: "https://raw.githubusercontent.com/monlor/subconverter-rules/main/full.ini"
+              },
             ]
           },
           {
