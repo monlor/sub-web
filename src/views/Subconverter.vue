@@ -183,6 +183,7 @@ export default {
           QuantumultX: "quanx",
           Surfboard: "surfboard",
           Loon: "loon",
+          singbox: "singbox",
           SSAndroid: "sssub",
           V2Ray: "v2ray",
           ss: "ss",
