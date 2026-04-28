@@ -1,8 +1,8 @@
 # ---- Dependencies ----
 FROM node:16-alpine AS dependencies
 WORKDIR /app
-COPY package.json ./
-RUN yarn install
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
 
 # ---- Build ----
 FROM dependencies AS build
