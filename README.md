@@ -26,8 +26,13 @@
 ## Docker
 
 ```shell
-docker run -d -p 58080:80 --restart always --name subweb careywong/subweb:latest
+docker run -d -p 58080:80 --restart always --name subweb \
+  -e SUBWEB_TITLE="订阅转换服务" \
+  -e SUBWEB_DEFAULT_BACKEND="https://example.com" \
+  ghcr.io/monlor/sub-web:latest
 ```
+
+`SUBWEB_TITLE` 用于配置网站标题；`SUBWEB_DEFAULT_BACKEND` 用于配置默认后端地址。若不设置 `SUBWEB_DEFAULT_BACKEND`，前端会默认使用当前网站地址拼接 `/sub?`，例如 `https://example.com/sub?`。
 
 若需要对代码进行修改，你需要在本地构建镜像并运行。
 注：每次修改代码，你都需要重新执行 docker build 来执行打包操作。
@@ -35,7 +40,10 @@ docker run -d -p 58080:80 --restart always --name subweb careywong/subweb:latest
 ```shell
 docker build -t subweb-local:latest .
 
-docker run -d -p 58080:80 --restart always --name subweb subweb-local:latest
+docker run -d -p 58080:80 --restart always --name subweb \
+  -e SUBWEB_TITLE="订阅转换服务" \
+  -e SUBWEB_DEFAULT_BACKEND="https://example.com" \
+  subweb-local:latest
 ```
 
 ## Requirements
@@ -64,7 +72,7 @@ yarn serve
 
 ## Deploy
 
-发布到线上环境，你需要安装依赖，执行以下打包命令，生成的 dist 目录即为发布目录。如需修改默认后端，请修改 src/views/Subconverter.vue 中 **defaultBackend** 配置项。
+发布到线上环境，你需要安装依赖，执行以下打包命令，生成的 dist 目录即为发布目录。
 
 ```shell
 yarn build

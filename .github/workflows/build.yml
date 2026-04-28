@@ -17,10 +17,7 @@ concurrency: ci-${{ github.ref }}
 
 env:
   PROJECT_NAME: sub-web
-  # Use docker.io for Docker Hub if empty
-  REGISTRY: docker.io
-  # github.repository as <account>/<repo>
-  DOCKER_USERNAME: monlor
+  REGISTRY: ghcr.io
   # docker build context path
   BARK_HOST: https://bark.monlor.cn
   CONTEXT: .
@@ -51,8 +48,8 @@ jobs:
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ env.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
@@ -60,7 +57,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: ${{ env.REGISTRY }}/${{ env.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}
+          images: ${{ env.REGISTRY }}/${{ github.repository }}
 
       - name: Cache Docker layers
         uses: actions/cache@v2
@@ -88,14 +85,6 @@ jobs:
         run: |
           rm -rf /tmp/.buildx-cache
           mv /tmp/.buildx-cache-new /tmp/.buildx-cache
-
-      - name: Sync README.md to Docker Hub
-        uses: ms-jpq/sync-dockerhub-readme@v1
-        with:
-          username: ${{ env.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: ${{ env.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}
-          readme: "README.md"
 
       - name: Notification
         uses: monlor/bark-action@v3

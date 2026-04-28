@@ -156,11 +156,32 @@
 </template>
 
 <script>
-const project = process.env.VUE_APP_LINK
-const remoteConfigSample = process.env.VUE_APP_DEFAULT_REMOTE_CONFIG
-const gayhubRelease = process.env.VUE_APP_LINK
-const defaultBackend = process.env.VUE_APP_DEFAULT_BACKEND + '/sub?'
-const header = process.env.VUE_APP_HEADER
+const runtimeConfig = (typeof window !== "undefined" && window.SUBWEB_CONFIG) || {};
+const project = process.env.VUE_APP_LINK;
+const remoteConfigSample = process.env.VUE_APP_DEFAULT_REMOTE_CONFIG;
+const gayhubRelease = process.env.VUE_APP_LINK;
+const header = runtimeConfig.title || process.env.VUE_APP_HEADER;
+
+function normalizeBackend(backend) {
+  const value = backend.trim();
+  if (value.endsWith("?")) {
+    return value;
+  }
+  if (value.endsWith("/sub")) {
+    return `${value}?`;
+  }
+  return `${value.replace(/\/+$/, "")}/sub?`;
+}
+
+function getDefaultBackend() {
+  const configuredBackend = runtimeConfig.defaultBackend;
+  if (configuredBackend) {
+    return normalizeBackend(configuredBackend);
+  }
+  return `${window.location.origin}/sub?`;
+}
+
+const defaultBackend = getDefaultBackend();
 
 export default {
   data() {
@@ -179,6 +200,7 @@ export default {
           Clash: "clash",
           Surge3: "surge&ver=3",
           Surge4: "surge&ver=4",
+          Surge5: "surge&ver=5",
           Quantumult: "quan",
           QuantumultX: "quanx",
           Surfboard: "surfboard",
